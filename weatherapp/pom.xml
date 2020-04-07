@@ -99,6 +99,12 @@
 		</dependency>
 
 		<dependency>
+		  <groupId>org.mockito</groupId>
+		  <artifactId>mockito-core</artifactId>
+		  <version>3.3.3</version>
+		</dependency>
+
+		<dependency>
 			<groupId>io.dropwizard</groupId>
 			<artifactId>dropwizard-testing</artifactId>
 			<version>${dropwizard.version}</version>
