@@ -10,7 +10,7 @@
 
 	<properties>
 		<dropwizard.version>0.9.2</dropwizard.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<java.version.target>1.8</java.version.target>
 		<java.version.source>1.8</java.version.source>
 	</properties>
