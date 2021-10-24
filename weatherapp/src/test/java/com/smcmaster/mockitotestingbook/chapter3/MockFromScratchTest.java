@@ -39,7 +39,7 @@ public class MockFromScratchTest {
     Weather result = resource.getWeatherForCity("cn", "beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "beijing");
+    assertEquals("beijing", result.getCityName());
     assertEquals("10", result.getTemperature());
     assertEquals("1000", result.getPressure());
     assertEquals("2@300", result.getWind());

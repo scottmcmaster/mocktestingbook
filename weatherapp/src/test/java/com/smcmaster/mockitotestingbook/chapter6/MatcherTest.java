@@ -50,7 +50,7 @@ public class MatcherTest {
         "beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
   }
 
   @Test
@@ -64,7 +64,7 @@ public class MatcherTest {
         "beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
   }
 
   @Test
@@ -102,7 +102,7 @@ public class MatcherTest {
         "cn", "beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
   }
 
   @Test
@@ -122,7 +122,7 @@ public class MatcherTest {
     assertNotNull(result);
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
   }
   
   @Test
@@ -141,7 +141,7 @@ public class MatcherTest {
         "cn", "beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
   }
   
   public static WeatherQuery weatherQueryEq(WeatherQuery expected) {

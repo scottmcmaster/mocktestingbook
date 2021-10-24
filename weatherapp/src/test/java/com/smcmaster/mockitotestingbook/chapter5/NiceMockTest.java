@@ -33,7 +33,7 @@ public class NiceMockTest {
     Weather result = resource.getWeatherForCity("cn", "beijing");
     
     // Verify. The city should be filled-in, everything else null.
-    assertEquals(result.getCityName(), "beijing");
+    assertEquals("beijing", result.getCityName());
     assertNull(result.getTemperature());
     assertNull(result.getPressure());
     assertNull(result.getWind());

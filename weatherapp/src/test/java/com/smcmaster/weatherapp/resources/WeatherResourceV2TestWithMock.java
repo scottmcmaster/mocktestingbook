@@ -35,7 +35,7 @@ public class WeatherResourceV2TestWithMock {
     
     Weather result = resource.getWeatherForCity("cn", "beijing");
     
-    assertEquals(result.getCityName(), "beijing");
+    assertEquals("beijing", result.getCityName());
     assertEquals("10", result.getTemperature());
     assertEquals("1000", result.getPressure());
     assertEquals("2@300", result.getWind());
@@ -52,7 +52,7 @@ public class WeatherResourceV2TestWithMock {
     
     Weather result = resource.getWeatherForCity("zz", "doesnotexist");
     
-    assertEquals(result.getCityName(), "doesnotexist");
+    assertEquals("doesnotexist", result.getCityName());
     assertNull(result.getTemperature());
     assertNull(result.getPressure());
     assertNull(result.getWind());

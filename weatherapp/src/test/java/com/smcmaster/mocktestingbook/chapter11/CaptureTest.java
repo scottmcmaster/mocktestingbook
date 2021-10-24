@@ -102,14 +102,14 @@ public class CaptureTest {
         "cn", "Beijing");
     
     // Verify.
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
     assertEquals(queryCap.getValue().getCity(), "Beijing");
     assertEquals(queryCap.getValue().getCountry(), "cn");
     verify(mock);
   }
 
   private void validateWeather(Weather result) {
-    assertEquals(result.getCityName(), "Beijing");
+	assertEquals("Beijing", result.getCityName());
     assertEquals("10", result.getTemperature());
     assertEquals("1000", result.getPressure());
     assertEquals("2@300", result.getWind());

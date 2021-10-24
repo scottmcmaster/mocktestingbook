@@ -44,7 +44,7 @@ public class PartialMockTest {
   }
   
   private void assertWeatherContents(Weather result) {
-    assertEquals(result.getCityName(), "Beijing");
+    assertEquals("Beijing", result.getCityName());
     assertEquals("10", result.getTemperature());
     assertEquals("1000", result.getPressure());
     assertEquals("2@300", result.getWind());
